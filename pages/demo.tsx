@@ -1,1 +1,3 @@
-export {default} from '@/modules/demo';
+import Demo from '@/modules/demo';
+
+export default Demo;

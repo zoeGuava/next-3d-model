@@ -1,0 +1,11 @@
+.test {
+  color: red;
+  p {
+    color: green;
+    @apply bg-yellow-600
+  }
+}
+.test2 {
+  color: blue;
+  @apply bg-green-500;
+}
