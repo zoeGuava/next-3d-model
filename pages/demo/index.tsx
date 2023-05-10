@@ -1,10 +1,10 @@
 import { BaseLayout } from '@/modules/core/layouts';
-import Page from '@/modules/home';
+import Page from '@/modules/demo';
 
-const HomePage = () => (
+const DemoPage = () => (
     <BaseLayout>
       <Page />
     </BaseLayout>
 );
 
-export default HomePage;
+export default DemoPage;
