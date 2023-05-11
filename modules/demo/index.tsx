@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import styles from './style.module.scss';
-import { GsapDemo, DemoLottie, LottieTag } from './components';
+import {
+  GsapDemo, DemoLottie, LottieTag, DemoGlbContainer,
+} from './components';
 
 const Demo = () => {
   const testText = 'test text';
@@ -32,6 +34,13 @@ const Demo = () => {
       </div>
       <DemoLottie />
       <div className='h-[550px] bg-green-700' />
+      <h2>demo glb</h2>
+      <div className='h-[800px] w-full'>
+        <DemoGlbContainer modelPath={'glb/cube.glb'} />
+      </div>
+      <div className='h-[500px] w-full'>
+        <DemoGlbContainer modelPath={'glb/waterBottle.glb'} />
+      </div>
     </>
   );
 };
