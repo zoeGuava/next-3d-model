@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import styles from './style.module.scss';
-import { GsapDemo } from './components';
+import { GsapDemo, DemoLottie, LottieTag } from './components';
 
 const Demo = () => {
   const testText = 'test text';
@@ -20,6 +20,18 @@ const Demo = () => {
       </div>
       <h2 className="text-base text-red-800">tailwind text</h2>
       <GsapDemo />
+      <h2>demo lottie</h2>
+      <h2>LottieTag</h2>
+      <div className={styles['lottie-container']}>
+        <div className={styles['lottie-item']}>
+          <LottieTag />
+        </div>
+      </div>
+      <div className='w-[400px]'>
+        <DemoLottie />
+      </div>
+      <DemoLottie />
+      <div className='h-[550px] bg-green-700' />
     </>
   );
 };
