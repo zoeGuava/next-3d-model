@@ -16,9 +16,10 @@ export const DemoGlbItem = ({ modelPath, scale = 40, position = [0, 0, 0] }) => 
         ref={ref}
         object={gltf.scene}
         position={position}
-        scale={hovered ? scale * 1.2 : scale}
-        onPointerOver={(event) => hover(true)}
-        onPointerOut={(event) => hover(false)}
+        scale={scale}
+        // scale={hovered ? scale * 1.2 : scale}
+        // onPointerOver={(event) => hover(true)}
+        // onPointerOut={(event) => hover(false)}
       />
     </>
   );

@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import styles from './style.module.scss';
 import {
-  GsapDemo, DemoLottie, LottieTag, DemoGlbContainer,
+  GsapDemo, DemoLottie, LottieTag, DemoGlbContainer, ReactThreeContainer,
 } from './components';
 
 const Demo = () => {
@@ -35,11 +35,16 @@ const Demo = () => {
       <DemoLottie />
       <div className='h-[550px] bg-green-700' />
       <h2>demo glb</h2>
-      <div className='h-[800px] w-full'>
+      <div className='mr-auto h-[800px] w-1/2'>
         <DemoGlbContainer modelPath={'glb/cube.glb'} />
       </div>
-      <div className='h-[500px] w-full'>
+      <div className='mr-auto h-[500px] w-1/2'>
         <DemoGlbContainer modelPath={'glb/waterBottle.glb'} />
+      </div>
+      <hr />
+      <h2>React Three is here</h2>
+      <div className='h-[500px]'>
+        <ReactThreeContainer />
       </div>
     </>
   );
