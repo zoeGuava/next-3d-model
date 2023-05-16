@@ -1,8 +1,11 @@
 import clsx from 'clsx';
+import { Canvas } from '@react-three/fiber';
 import styles from './style.module.scss';
 import {
   GsapDemo, DemoLottie, LottieTag, DemoGlbContainer, ReactThreeContainer,
 } from './components';
+import DemoAnimateGlb from './components/DemoAnimateGlb';
+import DemoAnimateTest from './components/DemoAnimateTest';
 
 const Demo = () => {
   const testText = 'test text';
@@ -35,6 +38,14 @@ const Demo = () => {
       <DemoLottie />
       <div className='h-[550px] bg-green-700' />
       <h2>demo glb</h2>
+      <div className='mr-auto h-[800px] w-1/2 border border-blue-400'>
+        <Canvas>
+          <DemoAnimateTest />
+        </Canvas>
+      </div>
+      <div className='mr-auto h-[800px] w-1/2 border border-blue-400'>
+        <DemoAnimateGlb modelPath={'glb/animateMove04.glb'} />
+      </div>
       <div className='mr-auto h-[800px] w-1/2'>
         <DemoGlbContainer modelPath={'glb/cube.glb'} />
       </div>
